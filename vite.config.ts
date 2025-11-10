@@ -1,0 +1,1 @@
+import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [react()],\n  server: {\n    port: 3000\n  },\n  build: {\n    outDir: 'dist',\n    minify: 'terser',\n    sourcemap: true\n  },\n  test: {\n    environment: 'jsdom',\n    globals: true\n  }\n})
