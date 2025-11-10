@@ -1,0 +1,1 @@
+export interface Todo {\n  id: number;\n  text: string;\n  completed: boolean;\n}
